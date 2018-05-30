@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs Should renders without problems 1`] = `
+<Tabs
+  allwaysSelected={false}
+  selectedId={2}
+  tabs={
+    Array [
+      Object {
+        "id": 1,
+        "title": "Tab 1",
+      },
+      Object {
+        "id": 2,
+        "title": "Tab 2",
+      },
+    ]
+  }
+  theme={
+    Object {
+      "TabUnderline": Object {
+        "background": "#1a99f4",
+        "height": "4px",
+        "transition": "all 0.5s ease 0s",
+      },
+      "TabWrap": Object {
+        "disabled": Object {
+          "color": "lightgray",
+          "cursor": "not-allowed",
+        },
+        "main": Object {
+          "background": "rgba(0,0,0,0)",
+          "cursor": "pointer",
+        },
+      },
+      "TabsWrap": Object {
+        "borderBottom": "1px solid #e0e0e0",
+        "padding": "0px 0px 0px 0px",
+      },
+      "fontSize": "14px",
+    }
+  }
+>
+  <TabsWrap
+    theme={
+      Object {
+        "TabUnderline": Object {
+          "background": "#1a99f4",
+          "height": "4px",
+          "transition": "all 0.5s ease 0s",
+        },
+        "TabWrap": Object {
+          "disabled": Object {
+            "color": "lightgray",
+            "cursor": "not-allowed",
+          },
+          "main": Object {
+            "background": "rgba(0,0,0,0)",
+            "cursor": "pointer",
+          },
+        },
+        "TabsWrap": Object {
+          "borderBottom": "1px solid #e0e0e0",
+          "padding": "0px 0px 0px 0px",
+        },
+        "fontSize": "14px",
+      }
+    }
+  >
+    <TabsWrap__Elem
+      borderBottom="1px solid #e0e0e0"
+      padding="0px 0px 0px 0px"
+      theme={
+        Object {
+          "TabUnderline": Object {
+            "background": "#1a99f4",
+            "height": "4px",
+            "transition": "all 0.5s ease 0s",
+          },
+          "TabWrap": Object {
+            "disabled": Object {
+              "color": "lightgray",
+              "cursor": "not-allowed",
+            },
+            "main": Object {
+              "background": "rgba(0,0,0,0)",
+              "cursor": "pointer",
+            },
+          },
+          "TabsWrap": Object {
+            "borderBottom": "1px solid #e0e0e0",
+            "padding": "0px 0px 0px 0px",
+          },
+          "fontSize": "14px",
+        }
+      }
+    >
+      <div
+        className="TabsWrap__Elem-kMUkKT cMsWrG"
+      >
+        <TabUnderline
+          left={0}
+          theme={
+            Object {
+              "TabUnderline": Object {
+                "background": "#1a99f4",
+                "height": "4px",
+                "transition": "all 0.5s ease 0s",
+              },
+              "TabWrap": Object {
+                "disabled": Object {
+                  "color": "lightgray",
+                  "cursor": "not-allowed",
+                },
+                "main": Object {
+                  "background": "rgba(0,0,0,0)",
+                  "cursor": "pointer",
+                },
+              },
+              "TabsWrap": Object {
+                "borderBottom": "1px solid #e0e0e0",
+                "padding": "0px 0px 0px 0px",
+              },
+              "fontSize": "14px",
+            }
+          }
+          visible={false}
+          width={0}
+        >
+          <TabUnderline__Elem
+            background="#1a99f4"
+            height="4px"
+            left={0}
+            theme={
+              Object {
+                "TabUnderline": Object {
+                  "background": "#1a99f4",
+                  "height": "4px",
+                  "transition": "all 0.5s ease 0s",
+                },
+                "TabWrap": Object {
+                  "disabled": Object {
+                    "color": "lightgray",
+                    "cursor": "not-allowed",
+                  },
+                  "main": Object {
+                    "background": "rgba(0,0,0,0)",
+                    "cursor": "pointer",
+                  },
+                },
+                "TabsWrap": Object {
+                  "borderBottom": "1px solid #e0e0e0",
+                  "padding": "0px 0px 0px 0px",
+                },
+                "fontSize": "14px",
+              }
+            }
+            transition="all 0.5s ease 0s"
+            visible={false}
+            width={0}
+          >
+            <div
+              className="TabUnderline__Elem-fUThlC kVJtFB"
+              height="4px"
+              width={0}
+            />
+          </TabUnderline__Elem>
+        </TabUnderline>
+        <TabWrap
+          innerRef={[Function]}
+          key="1"
+          onClick={[Function]}
+        >
+          <TabWrap__Elem
+            background="rgba(0,0,0,0)"
+            cursor="pointer"
+            fontSize="14px"
+            innerRef={[Function]}
+            onClick={[Function]}
+          >
+            <div
+              className="TabWrap__Elem-vDmtD kCGsSc"
+              cursor="pointer"
+              fontSize="14px"
+              onClick={[Function]}
+            >
+              Tab 1
+            </div>
+          </TabWrap__Elem>
+        </TabWrap>
+        <TabWrap
+          innerRef={[Function]}
+          key="2"
+          onClick={[Function]}
+        >
+          <TabWrap__Elem
+            background="rgba(0,0,0,0)"
+            cursor="pointer"
+            fontSize="14px"
+            innerRef={[Function]}
+            onClick={[Function]}
+          >
+            <div
+              className="TabWrap__Elem-vDmtD kCGsSc"
+              cursor="pointer"
+              fontSize="14px"
+              onClick={[Function]}
+            >
+              Tab 2
+            </div>
+          </TabWrap__Elem>
+        </TabWrap>
+      </div>
+    </TabsWrap__Elem>
+  </TabsWrap>
+</Tabs>
+`;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import {withTheme} from 'styled-components';
 import TabsWrap from '../styled/TabsWrap';
 import TabWrap from '../styled/TabWrap';
 import TabUnderline from '../styled/TabUnderline';
@@ -135,4 +135,4 @@ Tabs.defaultProps = {
   tabs: [{ id: 1, title: '' }]
 };
 
-export default Tabs;
+export default withTheme(Tabs);

@@ -1,29 +1,41 @@
-import React from 'react';
-import styled from 'styled-components';
-import defaultTheme from '../theme/defaultTheme';
-import {getThemeAsPlainTextByKeys} from '../utils';
+import React from "react";
+import styled from "styled-components";
+import defaultTheme from "../theme/defaultTheme";
+import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
 
 const Elem = styled.div`
-    margin-right: 40px;
-    :last-child {
-      margin-right: 0px;
-    }
-    padding-bottom: 12px;
-    color: ${props => props.color};
-    cursor: ${props => props.cursor};
-    font-size: ${props => props.fontSize};
-  `;
-
+  margin-right: 40px;
+  :last-child {
+    margin-right: 0px;
+  }
+  padding-bottom: 12px;
+  color: ${props => props.color};
+  cursor: ${props => props.cursor};
+  font-size: ${props => props.fontSize};
+`;
 
 const TabWrap = props => {
+  const merged = innerMerge(
+    {},
+    defaultTheme.Tabs,
+    (props.theme && props.theme.Tabs) || {}
+  );
 
-  const theme = getThemeAsPlainTextByKeys(props.theme || defaultTheme);
+  const theme = getThemeAsPlainTextByKeys(merged);
 
-  Object.assign(theme, getThemeAsPlainTextByKeys(
-    (props.theme && props.theme.TabWrap) || defaultTheme.TabWrap,
-    props.disabled ? 'disabled' : 'main'
-  ));
+  const mergedTabWrap = innerMerge(
+    {},
+    defaultTheme.Tabs.TabWrap,
+    (props.theme && props.theme.Tabs && props.theme.Tabs.TabWrap) || {}
+  );
 
+  Object.assign(
+    theme,
+    getThemeAsPlainTextByKeys(
+      mergedTabWrap,
+      props.disabled ? "disabled" : "main"
+    )
+  );
 
   return <Elem {...props} {...theme} />;
 };

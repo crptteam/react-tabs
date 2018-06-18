@@ -1,9 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys } from '../utils';
-import defaultTheme from '../theme/defaultTheme';
-
+import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import defaultTheme from "../theme/defaultTheme";
 
 const Elem = styled.div`
   border-bottom: ${props => props.borderBottom};
@@ -15,10 +14,13 @@ const Elem = styled.div`
 `;
 
 const TabsWrap = props => {
-  const theme = getThemeAsPlainTextByKeys(
-    props.theme && props.theme.TabsWrap || defaultTheme.TabsWrap
+  const merged = innerMerge(
+    {},
+    defaultTheme.Tabs.TabsWrap,
+    (props.theme && props.theme.Tabs && props.theme.Tabs.TabsWrap) || {}
   );
 
+  const theme = getThemeAsPlainTextByKeys(merged);
 
   return <Elem {...theme} {...props} />;
 };

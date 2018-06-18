@@ -1,7 +1,7 @@
 export default {
   Tabs: {
     TabsWrap: {
-      borderBottom: "1px solid rgba(0,0,0,0)",
+      borderBottom: "1px solid #e0e0e0",
       padding: "0px 0px 0px 0px"
     },
     TabUnderline: {

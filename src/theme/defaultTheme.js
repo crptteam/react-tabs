@@ -7,7 +7,8 @@ export default {
     TabUnderline: {
       background: "#1a99f4",
       height: "4px",
-      transition: "all 0.5s ease 0s"
+      transition: "all 0.5s ease 0s",
+      bottom: '-1px'
     },
     TabWrap: {
       main: {

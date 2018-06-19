@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import { getThemeAsPlainObjectByKeys, innerMerge } from "../utils";
 import defaultTheme from "../theme/defaultTheme";
 
 const Elem = styled.div`
@@ -10,7 +10,7 @@ const Elem = styled.div`
   height: ${props => props.height};
   background: ${props => (props.width ? props.background : "rgba(0,0,0,0)")};
   position: absolute;
-  bottom: -1px;
+  bottom: ${props => props.bottom};
   display: ${props => (props.visible ? "inline-block" : "none")};
   transition: ${props => (props.width ? props.transition : "none")};
 `;
@@ -22,7 +22,7 @@ const TabUnderline = props => {
     (props.theme && props.theme.Tabs && props.theme.Tabs.TabUnderline) || {}
   );
 
-  const theme = getThemeAsPlainTextByKeys(merged);
+  const theme = getThemeAsPlainObjectByKeys(merged);
 
   return <Elem {...theme} {...props} />;
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import defaultTheme from "../theme/defaultTheme";
-import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import { getThemeAsPlainObjectByKeys, innerMerge } from "../utils";
 
 const Elem = styled.div`
   margin-right: 40px;
@@ -21,7 +21,7 @@ const TabWrap = props => {
     (props.theme && props.theme.Tabs) || {}
   );
 
-  const theme = getThemeAsPlainTextByKeys(merged);
+  const theme = getThemeAsPlainObjectByKeys(merged);
 
   const mergedTabWrap = innerMerge(
     {},
@@ -31,7 +31,7 @@ const TabWrap = props => {
 
   Object.assign(
     theme,
-    getThemeAsPlainTextByKeys(
+    getThemeAsPlainObjectByKeys(
       mergedTabWrap,
       props.disabled ? "disabled" : "main"
     )

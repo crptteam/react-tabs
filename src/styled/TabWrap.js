@@ -8,7 +8,7 @@ const Elem = styled.div`
   :last-child {
     margin-right: 0px;
   }
-  padding-bottom: 12px;
+  padding-bottom: ${props => props.paddingBottom};
   color: ${props => props.color};
   cursor: ${props => props.cursor};
   font-size: ${props => props.fontSize};

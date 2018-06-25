@@ -112,6 +112,7 @@ class Tabs extends Component {
             innerRef={el => (this.tabsElems[item.id] = { el, item })}
             onClick={e => this.onTabClick(e, item)}
             disabled={item.disabled}
+            theme={this.props.theme}
           >
             {item.title}
           </TabWrap>

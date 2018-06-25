@@ -18,7 +18,8 @@ export default {
       disabled: {
         color: "lightgray",
         cursor: "not-allowed"
-      }
+      },
+      paddingBottom: "12px"
     },
     fontSize: "14px"
   }

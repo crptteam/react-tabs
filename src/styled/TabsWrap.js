@@ -7,9 +7,9 @@ import defaultTheme from "../theme/defaultTheme";
 const Elem = styled.div`
   border-bottom: ${props => props.borderBottom};
   padding: ${props => props.padding};
-  display: inline-flex;
+  display: ${props => props.fillWidth ? 'flex' : 'inline-flex'};
   align-items: center;
-  justify-content: space-between;
+  justify-content: ${props => props.fillWidth ? '' : 'space-between'};
   position: relative;
 `;
 

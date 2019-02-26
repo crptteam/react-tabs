@@ -1,6 +1,6 @@
 {
   "name": "@crpt/react-tabs",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "react-tabs React component",
   "main": "lib/index.js",
   "module": "es/index.js",

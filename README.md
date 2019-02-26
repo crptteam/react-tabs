@@ -22,6 +22,7 @@ import { Tabs } from  "@crpt/react-tabs";
 | tabs: Array (Required) | Tabs configuration. | <Tabs tabs={[{id: 1, title: "Tab 1"}, {id: 2, title: "Tab 2"}]} /> |
 | selectedId: Number | ID of selected tab. | <Tabs tabs={[{id: 1, title: "Tab 1"}, {id: 2, title: "Tab 2"}]} selectedId={2} /> |
 | onSelect: Function | Callback for tab select event. | <Tabs tabs={[{id: 1, title: "Tab 1"}, {id: 2, title: "Tab 2"}]} onSelect{val => console.log(val)} /> |
+| fillWidth: Boolean | Fills width of container. | <Tabs fillWidth /> |
 
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square

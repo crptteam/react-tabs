@@ -96,10 +96,10 @@ class Tabs extends Component {
   }
 
   render() {
-    const { tabs, ...otherProps } = this.props;
+    const { tabs, fillWidth, ...otherProps } = this.props;
 
     return (
-      <TabsWrap theme={this.props.theme}>
+      <TabsWrap theme={this.props.theme} fillWidth={fillWidth}>
         <TabUnderline
           left={this.state.underlineLeft}
           width={this.state.underlineWidth}
@@ -127,7 +127,8 @@ Tabs.propTypes = {
   tabs: PropTypes.array.isRequired,
   onSelect: PropTypes.func,
   selectedId: PropTypes.number,
-  allwaysSelected: PropTypes.bool
+  allwaysSelected: PropTypes.bool,
+  fillWidth: PropTypes.bool,
 };
 
 Tabs.defaultProps = {
